@@ -21,13 +21,13 @@ const currentDayForecast = data => [
     },
     {
         name: 'max temp',
-        value: Math.round(data.max_temp),
-        unit: '°C',
+        value: Math.round(((data.max_temp * 9)/5)+32),
+        unit: '°F',
     },
     {
         name: 'min temp',
-        value: Math.round(data.min_temp),
-        unit: '°C',
+        value: Math.round(((data.min_temp * 9)/5)+32),
+        unit: '°F',
     },
 ];
 
