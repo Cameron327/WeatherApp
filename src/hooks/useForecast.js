@@ -18,7 +18,7 @@ const useForecast = () => {
         const { data } = await axios(`${REQUEST_URL}/search`, { params: { query: location } });
 
         if (!data || data.length === 0) {
-            setError('There is no such location');
+            setError('That location is not in their database');
             setLoading(false);
             return;
         }
